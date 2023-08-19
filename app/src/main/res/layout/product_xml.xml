@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="190dp"
+    android:layout_height="235dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/backgroung_product">
+
+    <ImageView
+        android:id="@+id/img_food_product_ID"
+        android:layout_width="136dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image9"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/txt_tiltle_product_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Hamburger"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_food_product_ID"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txt_describe_product_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meat Salad"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_tiltle_product_ID"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tiltle_product_ID"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txt_price_product_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="$15.00"
+        android:textColor="#D30B0B"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txt_describe_product_ID"
+        app:layout_constraintTop_toBottomOf="@+id/txt_describe_product_ID"
+        tools:ignore="HardcodedText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
